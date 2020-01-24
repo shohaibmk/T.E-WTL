@@ -1,0 +1,45 @@
+<!doctype>
+<html>
+<title>Palindrome</title>
+
+<body>
+<script>
+function pal()
+{
+	var no = document.getElementById("num").value;
+	var last=no.length;
+	var flag;
+	if(last==1)
+		flag=1;
+	else
+	{	
+		last=last+1;
+		for(i=0;i<last;i++,last--)
+		{
+			if(no.charAt(i)==no.charAt(last))
+			{
+				flag=1;
+			}
+			else
+			{
+				flag=0;
+				break;
+			}
+		}
+	}
+	if(flag)
+		window.alert("Number is a palindrome")
+	else
+		window.alert("Number is not a palindrome")
+}
+</script>
+
+</br></br></br></br></br></br>
+<input  type="text" id="num" placeholder="number 1"></br>
+
+&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+<button onclick="pal()">Palindrome check</button>
+
+<p id="p"></p>
+</body>
+</html>

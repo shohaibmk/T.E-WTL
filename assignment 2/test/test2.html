@@ -1,0 +1,35 @@
+<!doctype>
+<html>
+<title>Largest number</title>
+
+<body>
+<script>
+function large()
+{
+	var x= Number(document.getElementById("num1").value);
+	var y= Number(document.getElementById("num2").value);
+	var z = Number(document.getElementById("num3").value);
+	var lar ;
+	if(x>y && x>z)
+		lar=x;
+	else if(y>x && y>z)
+		lar=y;
+	else
+		lar=z;	
+
+	window.alert("Largest number is : "+lar)
+}
+</script>
+
+</br></br></br></br></br></br>
+<input  type="text" id="num1" placeholder="number 1"></br>
+<input  type="text" id="num2" placeholder="number 2"></br>
+<input  type="text" id="num3" placeholder="number 3"></br>
+
+</br>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+
+<button onclick="large()">Find the largest</button>
+
+<p id="p"></p>
+</body>
+</html>
